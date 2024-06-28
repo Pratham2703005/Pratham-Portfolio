@@ -1,118 +1,134 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Be Vietnam Pro", sans-serif;
 }
-body{
-    overflow-x:hidden;
-}
-:root{
+
+
+:root {
     --beOrange: #e84949;
 }
-.wrapper{
+
+.wrapper {
     height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
 }
-.container{
-    width: 75vw;
+
+.container {
+    width: 1200px;
     margin: 0 auto;
-    height: 100vh;
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
+    flex-wrap: wrap;
 }
-.logo{
-    width: 5rem;
+
+.logo {
+    width: 4rem;
 }
-.logo-con{
+
+.logo-con {
     display: flex;
-    justify-content: baseline;
     align-items: center;
+    justify-content: baseline;
 }
-.logo-text{
-    margin-left: -1.5rem;
-    font-size: 1.75em;
+
+.logo-text {
+    margin-left: -1.2rem;
+    font-size: 1.5em;
 }
-.nav-item{
+
+.nav-item {
     display: flex;
     gap: 2rem;
-    padding: 0 4rem;
+    padding: 0 4em;
 }
-.nav-item div{
-    font-size: 1.25em;
+
+.nav-item div {
+    font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
 }
-.nav-item div a{
+
+.nav-item div a {
     color: black;
 }
-.nav-item div:hover{
+
+.nav-item div:hover {
     transition: 0.2s;
     font-weight: bold;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.hero-section{
+
+.hero-section {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 6rem auto;
+    margin: 4rem auto;
     gap: 5rem;
     padding: 0 1rem;
-    padding-bottom: 8rem;
+    padding-bottom: 5rem;
 }
-.faded-text{
+
+.faded-text {
     user-select: none;
     position: absolute;
-    font-size: 13em;
-    color: rgb(231,231,231);
-    bottom: -30%;
+    font-size: 12em;
+    color: rgb(231, 231, 231);
+    bottom: -23%;
     left: -5%;
     font-weight: bold;
     transition: all 3s;
 }
-.hero-left{
-    display:flex ;
+
+.hero-left {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
 }
-.role{
+
+.role {
     color: #4e45d5;
-    font-weight: 700;
+    font-weight: 800;
 }
-.hero-sec-heading{
-    font-size: 2.87em;
+
+.hero-sec-heading {
+    font-size: 2.2rem;
     color: #343d68;
     font-weight: 500;
 }
-.hero-sec-sub-heading{
-    font-size: 2.93em;
-    line-height:0.96em;
+
+.hero-sec-sub-heading {
+    font-size: 2.2rem;
+    line-height: 2rem;
 }
-.hero-sec-des{
+
+.hero-sec-des {
     margin-top: 1rem;
     width: 70%;
     font-weight: 500;
-    font-size: 1.3em;
+    /* font-size: 1rem; */
 }
 
-
-.btn-pink{
+.btn-pink {
     width: fit-content;
-    position: absolute;
+    /* position: absolute; */
     background-color: #e84949;
-    box-shadow:5px 5px 7px 0px #0000003f;
-    font-size: 1.3em;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    font-size: 1rem;
     padding: 0.8rem 2.3rem;
     position: relative;
     font-weight: 500;
@@ -121,19 +137,13 @@ a{
     z-index: 1;
     cursor: pointer;
     border: solid 3px transparent;
-
 }
 
-.btn-black{
+.btn-black {
     background-color: black;
 }
 
-/* .btn-project{
-    font-size: small;
-    font-weight: 400;
-    background-color: #343d68;
-} */
-.btn-pink::before{
+.btn-pink::before {
     content: "";
     background-color: white;
     position: absolute;
@@ -143,102 +153,111 @@ a{
     bottom: 0;
     transform: scaleX(0);
     transform-origin: left;
-    transition: 0.8s all; 
+    transition: 0.8s all;
     z-index: -1;
 }
-.btn-pink:hover::before{
+
+.btn-pink:hover::before {
     transform: scaleX(1);
 }
-.btn-pink:hover{
+
+.btn-pink:hover {
     border: solid 3px #e84949;
     color: black;
 }
-.btn-black:hover{
-    border:solid 3px black;
-}
-/* .btn-project:hover{
-    border: solid 3px #343d68;
-} */
 
-.hero-right{
+.btn-black:hover {
+    border: solid 3px black;
+}
+
+.hero-right {
     position: relative;
 }
-.absolute{
+
+.absolute {
     position: absolute;
 }
-.user-image{
+
+.user-image {
     padding: 2.5rem;
     filter: grayscale(1);
     transition: all 1s;
     animation: scaleImage 5s linear infinite alternate;
 }
-.user-image img{
+
+.user-image img {
     z-index: -9;
-    height: 22.5em;
-    width: 22.5em;
+    height: 21rem;
+    width: 21rem;
 }
+
 @keyframes scaleImage {
-    from{
+    from {
         filter: grayscale(0);
         transform: scale(1);
     }
-    to{
+    to {
         transform: scale(1.1);
         filter: grayscale(1);
         box-shadow: 3px 3px 10px black;
     }
-    
 }
-.icon-dots{
-    z-index:1;
+
+.icon-dots {
+    z-index: 1;
     bottom: -1rem;
     right: 0;
-    animation: dotsAnime 5s infinite ;
-
+    animation: dotsAnime 5s infinite;
 }
+
 @keyframes dotsAnime {
-    0%{
+    0% {
         transform: translateY(0px);
     }
-    50%{
+    50% {
         transform: translateY(-15px);
     }
-    100%{
+    100% {
         transform: translateY(0px);
     }
 }
-.icon-cube{
+
+.icon-cube {
     z-index: 9;
-    top: -0.8em;
-    right: 1em;
+    top: -0.8rem;
+    right: 1rem;
     animation: cubeAnime 5s infinite alternate;
 }
+
 @keyframes cubeAnime {
-    from{
+    from {
         transform: rotateY(0deg) translateY(0px);
     }
-    to{
+    to {
         transform: rotateY(180deg) translateY(-12px);
     }
 }
-.icon-circle{
+
+.icon-circle {
     opacity: 0.5;
     left: 0;
     bottom: 0;
     z-index: 9;
     animation: circleAnime 6s linear infinite alternate;
 }
+
 @keyframes circleAnime {
-    from{
+    from {
         left: 0;
         bottom: 0;
     }
-    to{
+    to {
         left: 5%;
         bottom: 10;
     }
 }
-.icon-zigzag{
+
+.icon-zigzag {
     height: 1em;
     width: 1em;
     z-index: 9;
@@ -246,59 +265,67 @@ a{
     left: -0.3rem;
     animation: zigAnime 5s ease-in infinite alternate;
 }
+
 @keyframes zigAnime {
-    
-    to{
+    to {
         left: 5%;
         top: 2%;
     }
 }
-.icon-plus{
+
+.icon-plus {
     z-index: 1;
     top: -0.8rem;
     left: 50%;
     animation: plusAnime 5s ease-in infinite alternate;
 }
+
 @keyframes plusAnime {
-    to{
+    to {
         left: 48%;
         top: 3%;
     }
 }
+
+
+
+
+
+
 .project-section{
     /* height: 100vh;
     width: 100vw; */
     
     background-color: rgb(231,231,231);
-    padding-bottom: 3.5em;
+    padding-bottom: 4rem;
 }
 .page-header{
-    color: var(--beOrange);
+    color: #e84949;
     text-align: center;
-    font-size: 5.62rem;
+    font-size: 5rem;
     padding-top: 0.33em;
 }
 .project-container{
-    max-width: 62.5vw;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 3rem 0;
     display: flex;
     flex-direction: column;  
-    gap: 3.5em;
+    gap: 120px;
 }
 .project-card{
     width: 90%;
-    height: 62.6vh;
+    height: 550px;
 
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     
     position: relative;
     box-shadow: 0px 0px 40px #1f1f1f;
 }
 .project-card:after{
     content: "";
-    background-color: #2722229a;
+    background-color: #1f1f1f9a;
     position: absolute;
     top: 0;
     left: 0;
@@ -325,7 +352,7 @@ a{
 }
 .project-num{
     position: absolute;
-    font-size: 13em;
+    font-size: 200px;
     font-weight: 600;
     color: white;
     z-index: 10;
@@ -333,23 +360,23 @@ a{
     transition: 0.4s;
 }
 .project-num-right{
-    right: -4%;
-    top: -9%;
+    right:-40px;
+    top:-45px;
 }
 .project-num-left{
-    left: -4%;
-    top: -9%;
+    left:-40px;
+    top:-45px;
 }
-.project-card:hover .project-num{
+/* .project-card:hover .project-num{
     display: block;
-}
+} */
 .project-content{
     position: absolute;
     display: flex;
     flex-direction: column;
     color: white;
     padding: 2em;
-    bottom: 6%;
+    bottom: 20%;
     z-index: 5;
     gap: 1em;
     transition: all 0.4s;
@@ -360,7 +387,7 @@ a{
     left: 10%;
 }
 .project-content-right{
-    right: 15%;
+    right: 10%;
 }
 .project-skills-con{
     width: 60%;
@@ -369,10 +396,10 @@ a{
     gap: 0.8em;
 }
 .project-skill{
-    width: 2.5em;
+    width: 40px;
 }
 .project-heading{
-    font-size: 3.2em;
+    font-size: 50px;
     font-weight: bold;
     line-height: 3rem;
 }
@@ -392,7 +419,7 @@ a{
 .icon{
     cursor: pointer;
     color: white;
-    font-size: 2.1em;
+    font-size: 35px;
     transition: 0.4s;
 }
 .icon:hover{
@@ -416,18 +443,99 @@ a{
     margin-left: 120px;
     background-image: url('https://source.unsplash.com/collection/190727/1600x900' );
 } */
+@media (max-width:1300px) {
+    .page-header {
+      padding-top: 30px;
+      color: var(--beOrange);
+      text-align: center;
+      font-size: 40px;
+    }
+    .project-con {
+      padding: 5px;
+      margin: 10px;
+      gap: 60px;
+    }
+    .project-section{
+        width: 1200px;
+    }
+    .project-card {
+      width: 100%;
+      height: 300px;
+    }
+    .project-card {
+      background-size: cover;
+      background-position: center;
+    }
+    .project-content {
+      scale: 0.5;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+    .project-content-left {
+      left: 0;
+    }
+    .project-heading {
+      font-size: 40px;
+      width: 100%;
+    }
+    .project-sub-heading {
+      width: 100%;
+    }
+    #project2 {
+      margin-left: 0;
+    }
+    #project4 {
+      margin-left: 0;
+    }
+    .project-skill-con {
+      width: 100%;
+    }
+    .project-skill {
+      width: 35px;
+    }
+    .project-card:hover .project-num {
+      display: none;
+    }
+    .project-card:hover .project-content {
+      scale: 0.55;
+    }
+    .skills-con{
+        width: 1200px;
+    }
+    .contactus-form{
+        width: 1200px;
+    }
+    footer{
+        /* max-width: 1200px; */
+        width: 1200px;
+    }
+    .faded-text{
+        left: 5%;
+    }
+  }
+@media (max-width:856px) {
+    .hero-section{
+        flex-wrap:wrap ;
+    }
+    .faded-text{
+        display: none;
+    }
+}
 .skills-con{
     position: relative;
     display: flex;
-    padding: 1rem;
+    padding: 5rem;
     margin: 0 auto;
-    padding-top: 6em ;
+    padding-top: 70px;
+    padding-bottom: 170px;
     gap: 1.9em;
-    height: 100vh;
-    width: 73vw;
+    /* height: 100vh;
+    width: 73vw; */
 }
 .skill-left{
-    width: 62%;
+    width: 50%;
     display: flex;
     flex-direction: column;
 
@@ -435,23 +543,23 @@ a{
 .skill-right{
     display: flex;
     flex-wrap: wrap;
-    width: 38%;
+    width: 50%;
     position: relative;
     gap: 2rem;
-    height: 31em;
+    /* height: 31em; */
     justify-content:center ;
     padding-top: 2em;
 }
 .skill-fade-text{
-    
     position: absolute;
     font-size: 15em;
     font-style: bold;
     color: rgb(231,231,231);
-    bottom: -10.1%;
-    right: -6%;
+    bottom: -10%;
+    right: 0;
     user-select: none;
     overflow:hidden;
+    z-index: -1;
 }
 .blob-style{
     position: absolute;
@@ -470,7 +578,7 @@ a{
     }
 }
 .skills-logo{
-    width: 6em;
+    width: 7em;
     transition: all 0.3s;
     
 }
@@ -497,11 +605,11 @@ a{
 }
 
 .contactus-form{ 
-    width: 100%;
+    /* width: 100%; */
     background-color: rgb(231,231,231);
 }
 .contactus-heading{
-    font-size: 5em;
+    font-size: 5rem;
     color: var(--beOrange);
     padding-top: 2rem;
 }
@@ -544,7 +652,7 @@ a{
 }
 #submit-btn{
     border: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin: 1rem 0;
 }
 #submit-btn:hover{
