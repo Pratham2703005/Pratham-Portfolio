@@ -515,16 +515,12 @@ a {
 @media (max-width: 1300px) {
   .page-header {
     padding-top: 2rem;
-    color: var(--beOrange);
-    text-align: center;
     font-size: 4rem;
   }
   .project-container {
     padding: 1rem;
     margin: 1rem;
     gap: 3rem;
-    justify-content: center;
-    margin-left: 0;
   }
   .project-section {
     width: 100vw;
@@ -624,7 +620,7 @@ a {
 @media (max-width: 550px) {
   .page-header {
     padding-top: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .project-container {
     padding: 0.5rem;
@@ -647,7 +643,7 @@ a {
   }
 
   .project-heading {
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: 100%;
   }
   .project-subheading {
@@ -658,15 +654,15 @@ a {
     width: 100%;
   }
   .project-skill {
-    width: 1.5rem;
+    width: 1.9rem;
   }
 
   .project-card:hover .project-content {
     scale: 0.6;
   }
   .btn-pink{
-    padding: 0.4rem 1.7rem;
-    font-size: 0.7rem;
+    padding: 0.8rem 0.8rem;
+    
   }
 }
 .skills-con {
@@ -953,6 +949,9 @@ a {
   }
 
   #submit-btn {
+    font-size: 0.9rem;
+  }
+  .submit-icon{
     font-size: 1rem;
   }
 }
@@ -1007,8 +1006,6 @@ footer {
 .icon:hover {
   color: var(--beOrange);
 }
-
-/* Responsive Design */
 @media (min-width: 768px) {
   .footer-wrapper {
     flex-direction: row;
@@ -1026,7 +1023,7 @@ footer {
 
 @media (max-width: 480px) {
   .icon-wrapper {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
   }
 }
