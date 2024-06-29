@@ -98,7 +98,7 @@
   overflow-x: hidden;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem 2rem;
 }
@@ -109,6 +109,7 @@
   font-style: normal;
   font-size: 2.5rem;
   color: var(--nav-main-head);
+
 }
 
 .logo-con {
@@ -118,7 +119,8 @@
 }
 
 .logo-text {
-  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: -0.1rem;
   font-size: 1.5em;
   color: var(--nav-main-head);
 }
@@ -192,7 +194,7 @@ a {
   margin-top: 2rem;
   gap: 5rem;
   padding: 0 1rem;
-  padding-bottom: 8rem;
+  padding-bottom: 9.5rem;
 }
 
 .faded-text {
@@ -406,6 +408,9 @@ a {
   .hero-section{
     display: block;
     row-gap: 100px;
+  }
+  .hero-left{
+    padding-bottom: 4rem;
   }
   .hero-right{
     background-position: center;
