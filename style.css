@@ -709,7 +709,7 @@ a {
 }
 @media (max-width: 550px) {
   .page-header {
-    padding-top: 2rem;
+    padding: 2rem 0rem;
     font-size: 3rem;
   }
   .project-container {
@@ -929,7 +929,7 @@ a {
     height: 4em;
   }
   .skill-heading{
-    font-size: 2.5em;
+    font-size: 2.5rem;
   }
   .caps{
     font-size: 1.4em;
