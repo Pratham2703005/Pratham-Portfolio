@@ -7,8 +7,8 @@
   font-family: "Be Vietnam Pro", sans-serif;
 }
 .nav-item .dark-mode-toggle {
-  color: #fcfc02;
-  font-size: 1.3rem;
+  color: #4e45d5;
+  font-size: 1.6rem;
   cursor: pointer;
 }
 .bxs-sun {
@@ -70,6 +70,14 @@
   --resume-btn: #4e45d5;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
 #wrapper {
   height: 100vh;
   width: 100vw;
@@ -90,17 +98,16 @@
   overflow-x: hidden;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  /* padding-top: 1rem; */
-  flex-wrap: wrap;
+  padding: 1rem 2rem;
 }
 
 .logo {
   font-family: "Tillana", system-ui;
   font-weight: 500;
   font-style: normal;
-  font-size: 5rem;
+  font-size: 2.5rem;
   color: var(--nav-main-head);
 }
 
@@ -111,17 +118,15 @@
 }
 
 .logo-text {
-  /* margin-bottom: -1rem;
-    margin-left: -2.5rem; */
+  margin-left: 0.5rem;
   font-size: 1.5em;
-  justify-content: baseline;
   color: var(--nav-main-head);
 }
 
 .nav-item {
   display: flex;
   gap: 2rem;
-  padding: 0 4em;
+  align-items: center;
 }
 
 .nav-item div {
@@ -142,6 +147,40 @@
 a {
   text-decoration: none;
 }
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text);
+}
+
+@media (max-width: 1000px) {
+  .nav-item {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      right: 20px;
+      background-color: transparent;
+      backdrop-filter: blur(3px); /* Add backdrop blur effect */
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+  }
+
+  .nav-item.active {
+      display: flex;
+      z-index: 100;
+      backdrop-filter: blur(20px);
+  }
+
+  .hamburger {
+      display: block;
+  }
+}
+
 
 .hero-section {
   width: 80%;
@@ -360,6 +399,49 @@ a {
   to {
     left: 48%;
     top: 3%;
+  }
+}
+
+@media (max-width:1300px){
+  .hero-section{
+    display: block;
+    row-gap: 100px;
+  }
+  .hero-right{
+    background-position: center;
+    margin: 0 auto;
+  }
+  .user-image {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width:546px){
+  .hero-left{
+    padding-bottom: 4rem;
+  }
+  .user-image img{
+    height: 15rem;
+    width: 15rem;
+  }
+  .icon-dots,.icon-cube,
+  .icon-circle,.icon-zigzag,
+  .icon-plus{
+    scale:0.5;
+  }
+  .icon-dots{
+    bottom: -6rem;
+    right: -5rem;
+  }
+  .hero-sec-heading,
+  .hero-sec-sub-heading{
+    font-size: 1.8rem;
+  }
+  .hero-section{
+    padding-bottom: 10rem;
+  }
+  .faded-text{
+    bottom: -3rem;
   }
 }
 
@@ -831,7 +913,8 @@ a {
     
   }
   .skill-fade-text{
-    display: none;
+    font-size: 8em;
+    bottom: -3%;
   }
   .skills-logo{
     width: 4em;
