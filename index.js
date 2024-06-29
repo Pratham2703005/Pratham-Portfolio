@@ -5,3 +5,7 @@ document.querySelector('#dark-mode-toggle').addEventListener('click', () => {
     // chang mobile status bar color
     document.querySelector('meta[name="theme-color"').setAttribute('content', isDarkMode ? '#1a1a2e' : '#fff');
 });
+
+document.getElementById('hamburger').addEventListener('click', function () {
+    document.getElementById('nav-item').classList.toggle('active');
+});
