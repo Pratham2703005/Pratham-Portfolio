@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff">
+    <link rel="shortcut icon" href="./static/images/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,15 +17,23 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo-con">
-                    <img src="images/p.png" class="logo">
+                    <!-- <img src="images/p.png" class="logo"> -->
+                     <div class="logo">P</div>
                     <div class="logo-text">ratham Israni</div>
                 </div>
                 <div class="nav-item">
                     <div><a href="#project">Projects</a></div>
                     <div><a href="#about">About</a></div>
                     <div><a href="#contact">Contact Me</a></div>
+                    <div class="dark-mode-toggle" id="dark-mode-toggle">
+                        <i class="bx bxs-sun"></i>
+                        <i class="bx bxs-moon"></i>
+                    </div>
                 </div>
             </div>
+           
+
+            
 
             <div class="hero-section">
                 <div class="absolute faded-text">Pk</div>
@@ -34,7 +48,7 @@
                         learn about mt journey as a software developer.
                     </div>
                     <div style="display: flex; gap: 23px;">
-                        <a href="https://drive.google.com/file/d/1dIUMI5XsRuMbIi0nuB3Qcxer0xFQ3kJ1/view"><button class="btn-pink btn-black">Resume</button></a>
+                        <a href="https://drive.google.com/file/d/1dIUMI5XsRuMbIi0nuB3Qcxer0xFQ3kJ1/view" target="_blank"><button class="btn-pink btn-black">Resume</button></a>
                         <a href="#contact"><button class="btn-pink">Hire Me</button></a>
                     </div>
                 </div>
@@ -61,6 +75,8 @@
                 </div>
             </div>
         </div>
+    
+
 
         <div class="project-section" id="project">
             <h2 class="page-header">Projects</h2>
@@ -178,7 +194,7 @@
         </div>
 
         <div class="contactus-form" id="contact">
-            <div class="container">
+            <div class="contact-container">
                 <h1 class="contactus-heading">Contact Me</h1>
                 <h3 class="contactus-subheading">Questions, thoughts, or just want to say hello?</h3>
                 <div class="contactus-form">
@@ -198,7 +214,7 @@
         </div>
 
         <footer>
-            <div class="container">
+            <div class="foot-container">
                 <div class="footer-wrapper">
                     <div class="link-wrapper">
                         <div><a href="#project">Projects</a></div>
@@ -231,5 +247,6 @@
       backDelay: 1000,
     });
   </script>
+  <script src="index.js"></script>
 </body>
 </html>
