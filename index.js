@@ -16,4 +16,4 @@ document.querySelector('#wrapper').addEventListener('click', () => {
     if (navItem.classList.contains('active')) {
         navItem.classList.remove('active');
     }
-});
+}); 
